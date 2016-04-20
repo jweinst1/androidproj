@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.user.globears.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_colorNormal="@android:color/holo_blue_dark"
+        app:menu_colorPressed="@color/colorPrimary"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/question_mark"
+            app:fab_colorNormal="@android:color/holo_green_dark"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="Help"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/inbox_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_inbox_black_24dp"
+            app:fab_colorNormal="@android:color/holo_green_dark"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="Inbox"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/upcoming_sessions_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_assessment_black_24dp"
+            app:fab_colorNormal="@android:color/holo_orange_dark"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="Upcoming Sessions"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/my_classes_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_school_black_24dp"
+            app:fab_colorNormal="@android:color/holo_red_dark"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="My Classes"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/payment_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_payment_black_24dp"
+            app:fab_colorNormal="@android:color/holo_purple"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="Payment"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/profile_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_pin_black_24dp"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="Profile"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/home_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_black_24dp"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="Home"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

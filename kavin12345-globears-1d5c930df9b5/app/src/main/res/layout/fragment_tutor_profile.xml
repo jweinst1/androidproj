@@ -1,0 +1,198 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:src="@drawable/airchair"
+            android:layout_alignParentTop="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/name"
+            android:text="Kevin Seo"
+            android:textSize="16sp"
+            android:layout_below="@+id/picture"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/first_row"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/knowledge"
+                android:text="Knowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:layout_marginLeft="10dp"
+                android:id="@+id/knowledge_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_row"
+            android:layout_below="@+id/first_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/teaching"
+                android:text="Teaching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:layout_marginLeft="22dp"
+                android:id="@+id/teaching_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/second_row" >
+
+            <TextView
+                android:id="@+id/sms_message"
+                android:text="SMS Message"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:clickable="true"
+                android:background="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/email"
+                android:text="Email"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:clickable="true"
+                android:background="@android:color/white"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/third_row"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/hourly_rate_title"
+                android:text="Hourly Rate:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/hourly_rate"
+                android:text="$100"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fifth_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fourth_row"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="Classes:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sixth_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fifth_row"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+
+            <ListView
+                android:id="@+id/list_of_classes"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/border"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seventh_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/sixth_row"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/times_of_availability"
+                android:text="Times of Availability"
+                android:textColor="@android:color/holo_blue_dark"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

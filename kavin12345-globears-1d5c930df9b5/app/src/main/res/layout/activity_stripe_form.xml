@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.user.globears.StripeForm">
+
+    <com.devmarvel.creditcardentry.library.CreditCardForm
+        android:id="@+id/credit_card_form"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera_24"
+        android:layout_toLeftOf="@+id/scan_card"
+        android:layout_alignTop="@+id/scan_card"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/scan_card"
+        android:layout_below="@+id/credit_card_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Card"
+        android:paddingTop="3dp"
+        android:textSize="16dp"
+        android:clickable="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/save_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_card"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

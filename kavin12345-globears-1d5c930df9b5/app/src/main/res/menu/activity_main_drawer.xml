@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/inbox"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/upcoming_sessions"
+            android:icon="@drawable/ic_assessment_black_24dp"
+            android:title="Upcoming Sessions" />
+        <item
+            android:id="@+id/times_of_availability"
+            android:icon="@drawable/ic_access_time_black_24dp"
+            android:title="Times of Availability" />
+        <item
+            android:id="@+id/upload_transcript"
+            android:icon="@drawable/ic_file_upload_black_24dp"
+            android:title="Upload Transcript" />
+        <item
+            android:id="@+id/my_classes"
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="My Classes" />
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Payment" />
+        <item
+            android:id="@+id/switch_to_tutee"
+            android:icon="@drawable/ic_rotate_left_black_24dp"
+            android:title="Switch to Tutee" />
+    </group>
+
+</menu>

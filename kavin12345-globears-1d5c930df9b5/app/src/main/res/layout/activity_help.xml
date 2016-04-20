@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.user.globears.HelpActivity">
+
+    <ImageView
+        android:id="@+id/help_icon"
+        android:src="@drawable/help_icon"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/basic_verbal_commands_title"
+        android:text="Basic Verbal Commands"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/help_icon"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:src="@drawable/search_icon"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/basic_verbal_commands_title"
+        android:layout_below="@+id/basic_verbal_commands_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/inbox"
+        android:src="@drawable/envelopes"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/basic_verbal_commands_title"
+        android:layout_below="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:src="@drawable/calendar_sessions"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/basic_verbal_commands_title"
+        android:layout_below="@+id/inbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/money"
+        android:src="@drawable/money"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/basic_verbal_commands_title"
+        android:layout_below="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/notebook"
+        android:src="@drawable/my_classes"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/basic_verbal_commands_title"
+        android:layout_below="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/find_tutors_text"
+        android:text="&quot;find tutors&quot;"
+        android:textSize="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/basic_verbal_commands_title"
+        android:layout_toRightOf="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/inbox_text"
+        android:text="&quot;inbox&quot;"
+        android:textSize="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/search"
+        android:layout_toRightOf="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/upcoming_sessions_text"
+        android:text="&quot;upcoming sessions&quot;"
+        android:textSize="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/inbox"
+        android:layout_toRightOf="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/payment_text"
+        android:text="&quot;payment&quot;"
+        android:textSize="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/calendar"
+        android:layout_toRightOf="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/my_classes_text"
+        android:text="&quot;my classes&quot;"
+        android:textSize="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/money"
+        android:layout_toRightOf="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

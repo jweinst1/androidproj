@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.user.globears.SignInActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/sign_in_toolbar" >
+    </include>
+
+    <Button
+        android:id="@+id/connect_with_facebook"
+        android:layout_below="@+id/tool_bar"
+        android:text="Connect with Facebook"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/facebook_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="Email"
+        android:singleLine="true"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_below="@+id/connect_with_facebook"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/pass_word"
+        android:hint="Password"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:password="true"
+        android:paddingLeft="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_below="@+id/email"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_below="@+id/pass_word"
+        android:layout_marginTop="30dp"
+        android:text="Forgot Password?"
+        android:textSize="12dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@+id/forgot_password"
+        android:text="LOGIN"
+        android:background="#758AB6"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

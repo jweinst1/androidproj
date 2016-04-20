@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmPhoneNumberActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/confirm_number_toolbar" >
+    </include>
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_below="@+id/tool_bar"
+        android:text="Enter the four digit code sent to your phone."
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/verification_code"
+        android:hint="****"
+        android:password="true"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/instructions"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/resend_code"
+        android:text="RESEND CODE"
+        android:textSize="20dp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/border"
+        android:layout_below="@+id/verification_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_below="@+id/resend_code"
+        android:text="CONFIRM"
+        android:background="#758AB6"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

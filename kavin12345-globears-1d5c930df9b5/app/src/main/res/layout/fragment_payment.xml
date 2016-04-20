@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.user.globears.PaymentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_credit_card_black_24dp"
+            android:text="**** **** **** ****"
+            android:textSize="24dp"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/stripe_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_add_box_black_24dp"
+            android:layout_below="@id/card_info"
+            android:text="Add Payment"
+            android:textSize="24dp"
+            />
+
+        <Button
+            android:id="@+id/checking_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Personal Checking"
+            android:clickable="false"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+            android:layout_below="@+id/stripe_button"/>
+
+        <Button
+            android:id="@+id/add_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checking_info"
+            android:drawableLeft="@drawable/ic_add_box_black_24dp"
+            android:text="Connect Bank Account"
+            android:textSize="18dp"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

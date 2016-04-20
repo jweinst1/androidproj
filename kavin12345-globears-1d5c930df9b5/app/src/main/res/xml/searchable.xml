@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="Geeni"
+    android:hint="Search.."
+    android:includeInGlobalSearch="true"
+    android:queryAfterZeroResults="true"
+    android:searchMode="queryRewriteFromText"
+    android:searchSettingsDescription="Search for classes" >
+
+    <actionkey
+        android:keycode="KEYCODE_CALL"
+        android:queryActionMsg="call"
+        android:suggestActionMsg="call" />
+
+</searchable>
+
